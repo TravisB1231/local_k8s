@@ -12,6 +12,9 @@ server.config["MYSQL_PASSWORD"] = os.environ["MYSQL_PASSWORD"]
 server.config["MYSQL_DB"] = os.environ["MYSQL_DB"]
 server.config["MYSQL_PORT"] = os.environ["MYSQL_PORT"]
 
+def createJWT(usernam, secret, bool):
+    pass
+
 @server.route("/login", methods=["POST"])
 def login():
     auth = request.authorization
